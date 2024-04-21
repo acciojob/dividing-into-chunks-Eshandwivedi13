@@ -10,13 +10,23 @@ const divide = (arr, n) => {// n - maxSum
 		if(sum > n){
 			ans.push(tempAns);
 			tempAns = [];
-			tempAns.push(elem);
-			continue;
+			sum = elem;
 		}
 		tempAns.push(elem);
 	}
+	if(tempAns.length > 0) { // push the last subarray if it's not empty
+		ans.push(tempAns);
+	}
 	return ans;
-};    
-
+};   
+// console.log(divide(arr, 5)); // replace prompt with a fixed value for testing
 const n = prompt("Enter n: ");
 alert(JSON.stringify(divide(arr, n)));
+
+
+
+
+
+
+
+
