@@ -20,9 +20,9 @@ const divide = (arr, n) => {// n - maxSum
 	return ans;
 };   
 // console.log(divide(arr, 5)); // replace prompt with a fixed value for testing
-const n = prompt("Enter n: ");
-alert(JSON.stringify(divide(arr, n)));
-
+// const n = prompt("Enter n: ");
+// alert(JSON.stringify(divide(arr, n)));
+module.exports = divide;
 
 
 
