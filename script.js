@@ -4,7 +4,7 @@ const divide = (arr, n) => {// n - maxSum
 	//list of subarrays, sum of each subarray <= n
 	let ans = [];
 	let tempAns = [];
-	int sum = 0;
+	let sum = 0;
 	for(let elem of arr){
 		sum += elem;
 		if(sum > n){
@@ -20,9 +20,9 @@ const divide = (arr, n) => {// n - maxSum
 	return ans;
 };   
 // console.log(divide(arr, 5)); // replace prompt with a fixed value for testing
-// const n = prompt("Enter n: ");
-// alert(JSON.stringify(divide(arr, n)));
-module.exports = divide;
+const n = prompt("Enter n: ");
+alert(JSON.stringify(divide(arr, n)));
+// module.exports = divide;
 
 
 
